@@ -79,6 +79,8 @@ def checkAwsCreds():
 
     :return: True if AWS credentials are properly configured. False if not.
     """
+    slog.info(os.getcwd())
+    
 
     sts = boto3.client('sts')
     try:
