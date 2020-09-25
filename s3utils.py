@@ -81,6 +81,7 @@ def checkAwsCreds():
     """
     slog.info(os.getcwd())
     
+    slog.info(os.getusername())
 
     sts = boto3.client('sts')
     try:
