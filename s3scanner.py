@@ -46,7 +46,6 @@ parser.add_argument('--version', action='version', version=CURRENT_VERSION,
                     help='Display the current version of this tool')
 parser.add_argument('buckets', help='Name of text file containing buckets to check')
 
-print(os.getcwd())
 # Parse the args
 args = parser.parse_args()
 
