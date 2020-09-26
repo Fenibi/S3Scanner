@@ -95,8 +95,6 @@ def checkBucket(inBucket, slog, flog, argsDump, argsList):
     #   full S3 url   i.e. flaws.cloud.s3-us-west-2.amazonaws.com
     #   bucket:region i.e. flaws.cloud:us-west-2
     slog.info(os.getcwd())
-    
-    slog.info(os.getlogin())
     if ".amazonaws.com" in inBucket:    # We were given a full s3 url
         bucket = inBucket[:inBucket.rfind(".s3")]
     elif ":" in inBucket:               # We were given a bucket in 'bucket:region' format
